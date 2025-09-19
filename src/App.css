@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General App Styles */
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+/* Select Dropdown Styles */
+.select-container {
+  margin: 30px auto;
+  width: 50%;
+  max-width: 400px;
+  position: relative;
+}
+
+.file-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007AFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 0.65rem auto;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* View Mode Toggle */
+.view-mode-toggle {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.view-mode-toggle button {
+  background-color: #6c757d;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.view-mode-toggle button:hover {
+  background-color: #5a6268;
+}
+
+.view-mode-toggle button.active {
+  background-color: #007bff;
+}
+
+/* Table Styles */
+.results-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.results-table-container th,
+.results-table-container td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.results-table-container th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.results-table-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .results-table-container table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
